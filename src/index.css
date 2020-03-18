@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700');
+@import url('../node_modules/@fortawesome/fontawesome-free/css/all.css');
+@import url('../node_modules/bootstrap/dist/css/bootstrap.css');
+@import url('../node_modules/admin-lte/dist/css/adminlte.css');
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

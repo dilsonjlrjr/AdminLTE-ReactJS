@@ -1,8 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-import 'bootstrap/dist/css/bootstrap.css';
-import 'admin-lte/dist/css/adminlte.css';
 import './index.css';
 
 import App from './App';
