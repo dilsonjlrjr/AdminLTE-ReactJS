@@ -1,5 +1,9 @@
 import React, { Fragment } from "react";
 
+// Images
+import ImgAdminLTE from 'admin-lte/dist/img/AdminLTELogo.png';
+import User2_160_160 from 'admin-lte/dist/img/user2-160x160.jpg';
+
 // import { Container } from './styles';
 
 const Starter = () => (
@@ -163,7 +167,7 @@ const Starter = () => (
       <aside className="main-sidebar sidebar-dark-primary elevation-4">
         <a href="index3.html" className="brand-link">
           <img
-            src="dist/img/AdminLTELogo.png"
+            src={ ImgAdminLTE }
             alt="AdminLTE Logo"
             className="brand-image img-circle elevation-3"
             style={{ opacity: 0.8 }}
@@ -175,7 +179,7 @@ const Starter = () => (
           <div className="user-panel mt-3 pb-3 mb-3 d-flex">
             <div className="image">
               <img
-                src="dist/img/user2-160x160.jpg"
+                src={ User2_160_160 }
                 className="img-circle elevation-2"
                 alt="User Image"
               />
