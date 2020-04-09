@@ -1,18 +1,25 @@
-import React from "react";
-import PropType from "prop-types";
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import { PropTypes } from 'prop-types';
 
 // import { Container } from './styles';
 
-const NavItem = (props) => (
-  <li className="nav-item d-none d-sm-inline-block">
-    <a href="#" className="nav-link">
-      {props.name}
-    </a>
-  </li>
-);
+export default class MainHeaderNavItem extends Component {
+  static propTypes = {
+    name: PropTypes.string.isRequired
+  };
 
-NavItem.propType = {
-    name: PropType.string.isRequired,
-};
+  static defaultProps = {
+    link: '#'
+  };
 
-export default NavItem;
+  render() {
+    return (
+      <li className="nav-item d-none d-sm-inline-block">
+        <Link to={this.props.link} className="nav-link">
+          {this.props.name}
+        </Link>
+      </li>
+    );
+  }
+}

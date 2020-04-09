@@ -1,14 +1,12 @@
 import React, { Fragment } from "react";
 
 import MainHeader from "../components/main-header";
-import NavBar from "../components/main-header/nav-bar";
-import NavItem from "../components/main-header/nav-bar/nav-item";
-
+import MainHeaderNavBar from "../components/main-header/nav-bar";
 
 import MainSideBar from "../components/main-sidebar";
 import NavItemSideBar from "../components/main-sidebar/sidebar/navitem-sidebar";
 import NavBarSideBar from "../components/main-sidebar/sidebar/navbar-sidebar";
-
+import MainHeaderNavItem from "../components/main-header/nav-bar/nav-item";
 
 // import { Container } from './styles';
 
@@ -16,16 +14,14 @@ const Starter = () => (
   <Fragment>
     <div className="wrapper">
       <MainHeader>
-        <NavBar>
-          <NavItem name="Home" />
-          <NavItem name="Contact" />
-        </NavBar>
+        <MainHeaderNavBar>
+          <MainHeaderNavItem name="Home" />
+          <MainHeaderNavItem name="Contact" />
+        </MainHeaderNavBar>
       </MainHeader>
 
       <MainSideBar>
         <NavBarSideBar>
-          <NavItemSideBar />
-          <NavItemSideBar />
           <NavItemSideBar />
         </NavBarSideBar>
       </MainSideBar>

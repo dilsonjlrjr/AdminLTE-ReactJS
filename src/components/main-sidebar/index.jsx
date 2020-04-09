@@ -7,10 +7,6 @@ import Sidebar from "./sidebar";
 // import { Container } from './styles';
 
 export default class MainSideBar extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <Fragment>
