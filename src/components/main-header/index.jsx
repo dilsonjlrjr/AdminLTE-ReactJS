@@ -8,7 +8,7 @@ export default class MainHeader extends Component {
       <Fragment>
         <nav className="main-header navbar navbar-expand navbar-white navbar-light">
           {this.props.children}
-          <form className="form-inline ml-3">
+          <div className="form-inline ml-3">
             <div className="input-group input-group-sm">
               <input
                 className="form-control form-control-navbar"
@@ -22,7 +22,7 @@ export default class MainHeader extends Component {
                 </button>
               </div>
             </div>
-          </form>
+          </div>
 
           <ul className="navbar-nav ml-auto">
             <li className="nav-item dropdown">
