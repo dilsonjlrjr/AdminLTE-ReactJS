@@ -7,6 +7,7 @@ import MainSideBar from "../components/main-sidebar";
 import NavItemSideBar from "../components/main-sidebar/sidebar/navitem-sidebar";
 import NavBarSideBar from "../components/main-sidebar/sidebar/navbar-sidebar";
 import MainHeaderNavItem from "../components/main-header/nav-bar/nav-item";
+import MainHeaderSearch from "../components/main-header/search";
 
 // import { Container } from './styles';
 
@@ -15,9 +16,10 @@ const Starter = () => (
     <div className="wrapper">
       <MainHeader>
         <MainHeaderNavBar>
-          <MainHeaderNavItem name="Home" />
-          <MainHeaderNavItem name="Contact" />
+          <MainHeaderNavItem name="Home" link="/" />
+          <MainHeaderNavItem name="Contact" link="#" />
         </MainHeaderNavBar>
+        <MainHeaderSearch onKeyPress={() => {}} buttonSubmit={() => {}} />
       </MainHeader>
 
       <MainSideBar>
