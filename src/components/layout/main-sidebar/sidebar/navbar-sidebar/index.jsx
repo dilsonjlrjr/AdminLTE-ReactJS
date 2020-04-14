@@ -2,13 +2,9 @@ import React, { Component, Fragment } from "react";
 
 // import { Container } from './styles';
 
-import { eventTreeView } from "../../../../events/treeview";
+import { eventTreeView } from "../../../../../events/treeview";
 
 export default class NavBarSideBar extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   componentDidMount() {
     eventTreeView('[data-widget="treeview"]');
   }

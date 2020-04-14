@@ -1,5 +1,9 @@
 import React, { Fragment } from "react";
-import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import {
+  Route,
+  BrowserRouter as Router,
+  Switch,
+} from "react-router-dom";
 import Starter from "../view/starter";
 
 // import { Container } from './styles';
@@ -7,9 +11,9 @@ import Starter from "../view/starter";
 const RouterGeneral = () => (
   <Fragment>
     <Router>
-      <Route path="/">
-        <Starter />
-      </Route>
+      <Switch>
+        <Route path="/" render={ props => <Starter/> } />
+      </Switch>
     </Router>
   </Fragment>
 );

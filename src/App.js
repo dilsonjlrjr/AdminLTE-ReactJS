@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import RouterGeneral from './router/router_general';
+import RouterGeneral from './router/router-general';
 
 function App() {
   return (
